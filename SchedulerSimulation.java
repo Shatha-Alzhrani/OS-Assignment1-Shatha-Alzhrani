@@ -152,6 +152,9 @@ class Process implements Runnable {
 }
 
 public class SchedulerSimulation {
+
+    static int contextSwitches = 0; // 2 Feature: Count context switches
+
     public static void main(String[] args) {
         // ⚠️ IMPORTANT: Put your student ID here to seed the random number generator
         // This makes your output unique to you - DO NOT forget to change this!
@@ -232,6 +235,7 @@ public class SchedulerSimulation {
             // Get the next thread from the queue (FIFO)
             Thread currentThread = processQueue.poll(); // Dequeues the next thread
 
+            contextSwitches++;// 2 Feature: Increment context switch counter
             // Print the current process queue (list of process IDs in the queue)
             System.out.println(Colors.BOLD + Colors.MAGENTA + "┌─ Ready Queue " + "─".repeat(65) + Colors.RESET);
             System.out.print(Colors.MAGENTA + "│ " + Colors.RESET + Colors.BRIGHT_WHITE + "[" + Colors.RESET);
@@ -284,6 +288,12 @@ public class SchedulerSimulation {
         System.out.println(Colors.BOLD + Colors.BRIGHT_GREEN +
                 "╔════════════════════════════════════════════════════════════════════════════════╗" +
                 Colors.RESET);
+        System.out.println(Colors.BRIGHT_YELLOW + "Total context switches: " + contextSwitches + Colors.RESET);// 2
+                                                                                                               // Feature:
+                                                                                                               // Display
+                                                                                                               // total
+                                                                                                               // context
+                                                                                                               // switches
         System.out.println(Colors.BOLD + Colors.BRIGHT_GREEN + "║" + Colors.RESET +
                 Colors.BG_GREEN + Colors.WHITE + Colors.BOLD +
                 "                     ✓  ALL PROCESSES COMPLETED  ✓                            " +
