@@ -307,11 +307,10 @@ public class SchedulerSimulation {
         // each thread
         processMap.put(thread, process);
 
-        // Print a message indicating the process has entered the ready queue
-        System.out.println(Colors.BLUE + "  ➕ " + Colors.BOLD + Colors.CYAN + " added to ready queue (Priority: "
-                + process.getPriority() + ")" +
-                Colors.RESET + Colors.BLUE + " added to ready queue" + Colors.RESET +
-                " │ Burst time: " + Colors.YELLOW + process.getBurstTime() + "ms" +
+        // 1 Feature: Display process priority in ready queue
+        System.out.println(Colors.BLUE + "  ➕ " + Colors.BOLD + Colors.CYAN + process.getName() +
+                Colors.RESET + Colors.BLUE + " (Priority: " + process.getPriority() + ") added to ready queue" +
+                Colors.RESET + " │ Burst time: " + Colors.YELLOW + process.getBurstTime() + "ms" +
                 Colors.RESET);
     }
 }
