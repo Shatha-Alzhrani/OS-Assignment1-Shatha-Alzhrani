@@ -453,7 +453,7 @@ Student Name: Shatha mohammed alzahrani
 Student ID: 445052195
 GitHub Username: Shatha-Alzhrani
 Repository Link: https://github.com/Shatha-Alzhrani/OS-Assignment1-Shatha-Alzhrani.git
-Video Link: [Google Drive link - make sure it's accessible to anyone with the link]
+Video Link: https://drive.google.com/file/d/1mJikELSf32M4MA1ejPH-mes4x5lQoOJt/view?usp=sharing
 Date Submitted: April 2, 2026
 ```
 
