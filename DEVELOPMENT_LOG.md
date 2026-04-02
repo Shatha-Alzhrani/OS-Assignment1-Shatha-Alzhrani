@@ -129,7 +129,7 @@ Before submitting, I arranged the final code and documentation, tested the simul
 
 ## Summary
 
-**Total time spent on assignment**: 4 hours and 20 minutes were spent on the assignment in total.
+**Total time spent on assignment**: 4 days were spent on the assignment.
 
 **Most challenging part**: The most difficult aspect is correctly implementing the waiting time functionality without changing the original Round-Robin behavior.
 
